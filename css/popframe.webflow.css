@@ -409,6 +409,10 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .phonecontainer {
+    max-width: 100vw;
+  }
+
   .mainsection {
     display: block;
   }
