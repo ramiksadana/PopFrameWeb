@@ -15,7 +15,6 @@ a {
   display: flex;
   overflow: visible;
   width: 600px;
-  height: 100%;
   margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
@@ -37,20 +36,18 @@ a {
 }
 
 .stylize {
-  display: block;
-  margin: 70px auto 0px;
+  margin: 50px auto 10px;
   padding-top: 0px;
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   -ms-grid-row-align: auto;
   align-self: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffecdd), color-stop(0%, #f6a9db), color-stop(50%, #bfb6ff), to(#9bf4ff));
-  background-image: linear-gradient(90deg, #ffecdd, #f6a9db 0%, #bfb6ff 50%, #9bf4ff);
-  font-family: urbane-rounded, sans-serif;
+  background-image: linear-gradient(60deg, #f6a9db, #c1b8ff 50%, #9bf4ff);
+  font-family: Nunito, sans-serif;
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.4;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   -webkit-background-clip: text;
   background-clip: text;
@@ -62,8 +59,9 @@ a {
 .mainsection {
   display: block;
   width: 100%;
-  height: 815px;
-  min-height: 815px;
+  height: 850px;
+  max-height: 850px;
+  min-height: 850px;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-orient: vertical;
@@ -90,15 +88,14 @@ a {
 }
 
 .heading2 {
-  max-width: 15em;
   margin: 10px auto 20px;
   padding-right: 10px;
   padding-left: 10px;
-  font-family: urbane-rounded, sans-serif;
+  font-family: Nunito, sans-serif;
   color: #000;
   font-size: 50px;
   line-height: 50px;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
 }
 
@@ -130,10 +127,10 @@ a {
 
 .name {
   padding-left: 15px;
-  font-family: urbane-rounded, sans-serif;
+  font-family: Nunito, sans-serif;
   color: #000;
-  font-size: 21px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .logo {
@@ -171,9 +168,9 @@ a {
 }
 
 .text-span {
-  font-family: urbane-rounded, sans-serif;
+  font-family: Nunito, sans-serif;
   color: #000;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -210,7 +207,7 @@ a {
   display: flex;
   width: 100%;
   height: 100px;
-  max-width: 1100px;
+  max-width: 940px;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-pack: justify;
@@ -312,20 +309,19 @@ a {
 .madeby {
   display: block;
   margin-right: auto;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   margin-left: auto;
   padding-top: 0px;
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   -ms-grid-row-align: auto;
   align-self: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffecdd), color-stop(0%, #ea8ac7), color-stop(50%, #bfb6ff), to(#9bf4ff));
-  background-image: linear-gradient(90deg, #ffecdd, #ea8ac7 0%, #bfb6ff 50%, #9bf4ff);
-  font-family: urbane-rounded, sans-serif;
+  background-image: linear-gradient(60deg, #f6a9db, #f6a9db, #c1b8ff 50%, #9bf4ff);
+  font-family: Nunito, sans-serif;
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.4;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   -webkit-background-clip: text;
   background-clip: text;
@@ -339,12 +335,12 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 60px;
-  -webkit-box-orient: horizontal;
+  margin-bottom: 20px;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -387,18 +383,29 @@ a {
 }
 
 .text-span-2 {
-  font-family: Ubuntu, Helvetica, sans-serif;
+  font-family: Nunito, sans-serif;
+  font-weight: 800;
+}
+
+.gradienttext {
+  font-family: Nunito, sans-serif;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .gradienttext.gradienttextactive {
-  background-image: linear-gradient(72deg, #ffecdd, #f6a9db 33%, #bfb6ff 66%, #9bf4ff);
+  background-image: linear-gradient(60deg, #f6a9db, #c1b8ff 50%, #9bf4ff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.gradienttext.sayhellotext {
+  font-size: 18px;
+}
+
 .heading {
+  margin: 0px 10px 5px;
   padding-right: 10px;
   padding-left: 10px;
   font-family: urbane-rounded, sans-serif;
@@ -406,6 +413,33 @@ a {
   font-size: 24px;
   line-height: 38px;
   font-weight: 600;
+}
+
+.twitterprofile {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.text-span-3 {
+  font-size: 40px;
+}
+
+.detailtext {
+  display: block;
+  max-width: 660px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: Nunito, sans-serif;
+  color: #49566e;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -421,6 +455,8 @@ a {
 @media screen and (max-width: 479px) {
   .phonecontainer {
     width: 100%;
+    height: 100%;
+    max-height: none;
     margin-top: 40px;
   }
 
@@ -443,11 +479,7 @@ a {
   }
 
   .sayhello {
-    display: none;
-  }
-
-  .name {
-    font-size: 16px;
+    font-size: 30px;
   }
 
   .get-app {
@@ -492,7 +524,6 @@ a {
 
   .madeby {
     margin-top: 30px;
-    margin-bottom: 10px;
   }
 
   .footerdiv {
@@ -510,9 +541,17 @@ a {
     min-width: auto;
   }
 
-  .heading {
-    margin-top: 10px;
-    margin-bottom: 0px;
+  .gradienttext.sayhellotext {
+    display: none;
+  }
+
+  .text-span-3 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .detailtext {
+    margin-bottom: 30px;
   }
 }
 
