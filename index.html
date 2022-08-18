@@ -47,6 +47,13 @@ body {
 		height: calc(100vh - 100px);
 	}
 }
+.scroll_div {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scroll_div::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
 </style>
   </div>
   <div class="header wf-section">
@@ -59,21 +66,31 @@ body {
   </div>
   <div id="sectionone" class="mainsection wf-section">
     <div class="phonecontainer">
-      <div class="video w-embed">
-        <video id="mainvideo" style="width:100%; height:100%; display: none;"" autoplay loop muted playsinline ondurationchange="onVideoLoad()">
-        <source src="media/PopFrame_Demonstration.mp4" type='video/mp4; codecs="hvc1"'>
-        <source src="media/PopFrame_Demonstration.webm" type="video/webm">
-      </video></div><img src="images/FirstFrame.png" loading="lazy" srcset="images/FirstFrame-p-500.png 500w, images/FirstFrame.png 504w" sizes="(max-width: 479px) 85vw, 100vw" alt="" class="placeholderimage">
-    <div id="videobackground" data-w-id="83c1a938-65a4-08c8-c58c-0c8784568227" class="phonecontainerbackground"></div>
+      <div class="video w-embed"><video id="mainvideo" style="width:100%; height:100%; display: none;" autoplay="" loop="" muted="" playsinline="" ondurationchange="onVideoLoad()">
+          <source src="media/PopFrame/PopFrame_Wordle.mp4" type="video/mp4; codecs="hvc1"">
+          <source src="media/PopFrame/PopFrame_Wordle.webm" type="video/webm">
+        </video></div>
+      <div id="videobackground" data-w-id="83c1a938-65a4-08c8-c58c-0c8784568227" class="phonecontainerbackground"></div><img src="images/FrameOne.png" loading="lazy" width="217" alt="PopFrame" class="placeholderimage">
+    </div>
+    <div class="madewithpopframe">
+      <div class="name madewith">MADE WITH</div><img src="images/App-Icon.png" loading="lazy" height="44" width="44" alt="PopFrame" class="image-2 madewith">
     </div>
   </div>
   <div class="wf-section">
     <div class="div-block-2">
-      <h1 class="stylize">Made to</h1>
-      <h4 id="w-node-_1c2382d0-c633-3829-6857-ad352bae7bf4-cfe5712a" class="heading2">Polish up your presentations<br>in seconds <span class="text-span-3">⚡️⏱</span></h4>
-      <h4 class="detailtext">Framing screenshots and screen recordings is annoying and tedious. So we made it easier.<br>‍<br>Use PopFrame to style your media with device frames &amp; tasteful backgrounds, and get them presentation-ready right from your phone.</h4>
-      <a href="https://apps.apple.com/us/app/popframe/id1572419006#" target="_blank" class="link-block w-inline-block"><img src="images/Download.png" loading="lazy" width="140" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" data-w-id="52dd02a6-1e4f-a99b-9fa8-56c914839d00" alt="Download on the App Store" class="downloadapp"></a>
-      <h1 id="w-node-ec43f898-f24d-39f1-b3ea-b19e9e114b5f-cfe5712a" class="madeby">Made by</h1>
+      <h1 class="stylize">Stylize</h1>
+      <h4 id="w-node-_1c2382d0-c633-3829-6857-ad352bae7bf4-98ed0959" class="heading2">Polish up your presentations<br>in seconds <span class="text-span-3">⚡️⏱</span></h4>
+      <h4 class="heading2-phone">Stylize screenshots and recordings in seconds <span class="text-span-3">⚡️⏱</span></h4>
+      <h4 class="detailtext">Framing images and videos is tedious. So we made it easier.<br>‍<br>Use PopFrame to style your screen recordings and screenshots with device frames &amp; tasteful backgrounds, and get them presentation-ready right from your phone.</h4>
+      <h4 class="detailtextphone">Framing images and videos is tedious. <br>So we made it easier.<br>‍<br>Use PopFrame to style your screenshots and screen recordings with device frames &amp; tasteful backgrounds, and get them presentation-ready right from your phone.</h4>
+      <a href="https://apps.apple.com/us/app/popframe/id1572419006" target="_blank" class="link-block w-inline-block"><img src="images/Download.png" loading="lazy" width="140" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" data-w-id="52dd02a6-1e4f-a99b-9fa8-56c914839d00" alt="Download on the App Store" class="downloadapp"></a>
+      <div class="sizzleholder">
+        <div class="sizzle w-embed"><video id="sizzlevideo" style="width:100%; height:100%; border-radius: 8px;" poster="https://ramiksadana.com/PopFrame/poster.jpg" controls="" playsinline="">
+            <source src="https://ramiksadana.com/PopFrame/PopFrame_Sizzle.mp4" type="video/mp4; codecs="hvc1"">
+            <source src="https://ramiksadana.com/PopFrame/PopFrame_Sizzle.webm" type="video/webm">
+          </video></div>
+      </div>
+      <h1 class="madeby">Made by</h1>
       <div class="footerdiv">
         <a href="https://twitter.com/ramiksadana" target="_blank" class="twitterprofile w-inline-block">
           <h1 class="heading"><span class="text-span">🐦 </span><span class="gradienttext">@ramiksadana</span></h1>
